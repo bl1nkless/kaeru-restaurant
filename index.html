@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#120305">
+  <meta name="description" content="KAERU — преміальний японський гастробар у серці Києва. Меню, відкриття, персональне запрошення та бронювання.">
+  <title>KAERU — Преміальний японський гастробар</title>
+  <link rel="icon" href="assets/kaeru-crest.png">
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-view="about">
+  <svg class="asset-filters" width="0" height="0" aria-hidden="true">
+    <defs>
+      <filter id="gold-art" color-interpolation-filters="sRGB">
+        <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 9.5 0 0 -0.62"/>
+      </filter>
+      <filter id="koi-art" color-interpolation-filters="sRGB">
+        <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  8 3.7 0 0 -3.63"/>
+      </filter>
+      <symbol id="icon-pin" viewBox="0 0 24 24">
+        <path d="M12 21s-7-5.68-7-11a7 7 0 1 1 14 0c0 5.32-7 11-7 11Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      </symbol>
+      <symbol id="icon-calendar" viewBox="0 0 24 24">
+        <rect x="3" y="4.5" width="18" height="16.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M3 9.5h18M8 3v3M16 3v3M7.5 13.5h2M11 13.5h2M14.5 13.5h2M7.5 17h2M11 17h2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M12 7.5v5l3.2 2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-guests" viewBox="0 0 24 24">
+        <circle cx="9" cy="8.5" r="3" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        <circle cx="16.5" cy="9.5" r="2.3" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M15.5 14.3c2.4.2 4.5 1.8 4.5 4.4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24">
+        <circle cx="12" cy="8.2" r="3.4" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M5 19.5c0-3.5 3.1-5.8 7-5.8s7 2.3 7 5.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="icon-phone" viewBox="0 0 24 24">
+        <path d="M6.6 4.5h2.7l1.3 3.6-1.8 1.6a12.5 12.5 0 0 0 5.5 5.5l1.6-1.8 3.6 1.3v2.7a1.8 1.8 0 0 1-2 1.8A15.8 15.8 0 0 1 4.8 6.5a1.8 1.8 0 0 1 1.8-2Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="torii-sunset" viewBox="0 0 280 220">
+        <defs>
+          <linearGradient id="sun-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#d8a868" stop-opacity="0.92"/>
+            <stop offset="65%" stop-color="#9b5b34" stop-opacity="0.82"/>
+            <stop offset="100%" stop-color="#4e1815" stop-opacity="0.4"/>
+          </linearGradient>
+        </defs>
+        <circle cx="140" cy="112" r="98" fill="none" stroke="#dfbe86" stroke-opacity="0.18" stroke-width="1"/>
+        <circle cx="140" cy="96" r="58" fill="url(#sun-grad)"/>
+        <path d="M72 152 L116 118 L152 146 L186 108 L216 152 Z" fill="#1d0407" opacity="0.88"/>
+        <path d="M84 74 C118 80 162 80 196 74 L192 82 C160 86 120 86 88 82 Z" fill="#220508" stroke="#f0d39d" stroke-width="1.5"/>
+        <path d="M82 74 C118 79 162 79 198 74" stroke="#f6e3be" stroke-width="2.4" stroke-linecap="round"/>
+        <rect x="92" y="93" width="96" height="6" fill="#220508" stroke="#e5c48c" stroke-width="1.2"/>
+        <path d="M108 82 L108 164 M115 82 L115 164" stroke="#e5c48c" stroke-width="1.5"/>
+        <rect x="109" y="82" width="6" height="82" fill="#220508"/>
+        <path d="M108.5 82 L108.5 164" stroke="#f5deb3" stroke-width="1.8"/>
+        <rect x="165" y="82" width="6" height="82" fill="#220508"/>
+        <path d="M165.5 82 L165.5 164" stroke="#f5deb3" stroke-width="1.8"/>
+      </symbol>
+      <symbol id="sakura-branch" viewBox="0 0 260 150">
+        <g fill="none" stroke="#cfa872" stroke-width="1.4" stroke-linecap="round">
+          <path d="M260 18 C210 26 175 45 128 78 C98 99 68 104 34 98"/>
+          <path d="M175 46 C152 34 128 28 96 30"/>
+          <path d="M138 71 C146 95 164 112 192 124"/>
+        </g>
+        <g fill="#e5989b" fill-opacity="0.82" stroke="#f8d8d6" stroke-width="0.8">
+          <circle cx="126" cy="76" r="10"/>
+          <circle cx="94" cy="30" r="8"/>
+          <circle cx="192" cy="64" r="12"/>
+          <circle cx="222" cy="38" r="11"/>
+          <circle cx="62" cy="96" r="9"/>
+          <circle cx="164" cy="108" r="8"/>
+        </g>
+        <g fill="#f9e5c8">
+          <circle cx="126" cy="76" r="2.2"/>
+          <circle cx="94" cy="30" r="1.8"/>
+          <circle cx="192" cy="64" r="2.5"/>
+          <circle cx="222" cy="38" r="2.2"/>
+          <circle cx="62" cy="96" r="2"/>
+          <circle cx="164" cy="108" r="1.8"/>
+        </g>
+      </symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+        <path d="M4 12h15m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-arrow-long" viewBox="0 0 36 16">
+        <path d="M1 8h32m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#content">До основного вмісту</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#about" aria-label="KAERU — Про ресторан">
+        <img class="brand-emblem" src="assets/kaeru-crest.png" width="248" height="214" alt="">
+        <span class="header-wordmark">
+          <strong>KAERU</strong>
+          <small>RESTAURANT</small>
+        </span>
+      </a>
+
+      <nav id="site-nav" class="site-nav" aria-label="Головна навігація">
+        <a href="#about" data-nav="about">Про KAERU</a>
+        <a href="#menu" data-nav="menu">Меню</a>
+        <a href="#opening" data-nav="opening">Відкриття</a>
+        <a href="#registration" data-nav="registration">Запрошення</a>
+        <a href="#booking" data-nav="booking">Бронювання</a>
+        <a href="#contacts" data-nav="contacts">Контакти</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-toggle" id="cart-toggle" type="button" aria-haspopup="dialog" aria-controls="cart-dialog">
+          <span class="cart-label">Кошик</span>
+          <span class="cart-badge" id="cart-count">0</span>
+        </button>
+        <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Відкрити навігацію">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="content" class="site-main">
+    <!-- 1. ПРО KAERU (ref_about_hero.jpg) -->
+    <section class="screen page-about" data-page="about" aria-labelledby="about-title">
+      <div class="about-hero-frame">
+        <div class="about-velvet-stage">
+          <p class="about-side-tag">
+            ПРЕМІАЛЬНИЙ<br>
+            ЯПОНСЬКИЙ<br>
+            ГАСТРОБАР
+          </p>
+
+          <div class="about-center-crest">
+            <img src="assets/home-crest.png" width="126" height="224" alt="Герб KAERU — 帰る">
+          </div>
+
+          <p class="about-location-tag">
+            <svg width="18" height="18" aria-hidden="true"><use href="#icon-pin"/></svg>
+            <span>КИЇВ<br>АРСЕНАЛЬНА</span>
+          </p>
+        </div>
+
+        <div class="about-giant-wordmark" aria-hidden="true">KAERU</div>
+
+        <div class="about-bottom-band">
+          <div class="about-heading-col">
+            <h1 id="about-title" tabindex="-1">
+              <span class="serif-pro">ПРО</span>
+              <span class="sans-kaeru">KAERU</span>
+            </h1>
+            <a class="line-link" href="#about-story">
+              ДІЗНАТИСЯ БІЛЬШЕ <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="about-copy-col">
+            <h2>ПРЕМІАЛЬНИЙ ЯПОНСЬКИЙ ГАСТРОБАР У СЕРЦІ КИЄВА.</h2>
+            <p>
+              Сучасна інтерпретація японської традиції, де гастрономія, атмосфера та культура поєднуються в одному просторі.
+            </p>
+          </div>
+
+          <div class="about-kanji-watermark" aria-hidden="true" lang="ja">帰<br>る</div>
+        </div>
+      </div>
+
+      <section class="about-story-section" id="about-story" aria-labelledby="story-title">
+        <div class="about-story-visual">
+          <img src="assets/restaurant.jpg" width="1460" height="973" loading="lazy" alt="Інтер’єр гастробару KAERU">
+          <div class="story-visual-badge">
+            <span lang="ja">帰る</span>
+            <small>Місце, куди хочеться повертатися</small>
+          </div>
+        </div>
+
+        <div class="about-story-content">
+          <p class="eyebrow">ФІЛОСОФІЯ KAERU</p>
+          <h2 id="story-title" class="serif-display" tabindex="-1">Мистецтво вечора у півтінях оксамиту та золота</h2>
+          <p class="lead">
+            У перекладі з японської <em>«Kaeru» (帰る)</em> означає «повертатися додому». Ми створили камерний гастробар на Арсенальній, де традиційна техніка омакасе зустрічається з авторськими коктейлями та глибокою вечірньою естетикою.
+          </p>
+
+          <div class="about-pillars">
+            <article class="pillar-card">
+              <span class="pillar-num">壱</span>
+              <h3>Авторська кухня</h3>
+              <p>Дикий тунець, ферментовані бульйони тонкоцу, преміальні сашимі та десерти ручної роботи.</p>
+            </article>
+            <article class="pillar-card">
+              <span class="pillar-num">弐</span>
+              <h3>Барна алхімія</h3>
+              <p>Коктейлі на основі юдзу, саке, японського віскі та ботанічних дистилятів.</p>
+            </article>
+            <article class="pillar-card">
+              <span class="pillar-num">参</span>
+              <h3>Камерна атмосфера</h3>
+              <p>Приглушене світло паперових ліхтарів андон, жива сакура та приватні столи для особливих зустрічей.</p>
+            </article>
+          </div>
+
+          <div class="about-cta-row">
+            <a class="gold-button" href="#menu">Переглянути меню <span class="button-arrow" aria-hidden="true">⟶</span></a>
+            <a class="outline-button" href="#booking">Забронювати стіл</a>
+            <a class="line-link" href="#opening">Відкриття та запрошення <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- 2. МЕНЮ (KAERU_menu_desktop_mobile.png) -->
+    <section class="screen page-menu" data-page="menu" aria-labelledby="menu-title" hidden>
+      <div class="luxury-frame menu-frame">
+        <header class="menu-hero">
+          <div class="menu-hero-copy">
+            <img class="menu-oval-crest" src="assets/home-crest.png" width="126" height="224" alt="">
+            <div class="menu-title-block">
+              <h1 id="menu-title" class="serif-display" tabindex="-1">МЕНЮ</h1>
+              <p class="menu-subtitle">СУЧАСНА ЯПОНСЬКА КУХНЯ<br>У СЕРЦІ КИЄВА</p>
+            </div>
+          </div>
+          <div class="menu-hero-image">
+            <img src="assets/menu-banner.jpg" width="1700" height="956" alt="Татакі з тунця під квітами сакури">
+          </div>
+        </header>
+
+        <div class="menu-filters" id="menu-filters" role="group" aria-label="Категорії меню"></div>
+
+        <div class="menu-cards-grid" id="dish-grid" aria-live="polite"></div>
+
+        <p class="sr-only" id="menu-status" role="status"></p>
+      </div>
+    </section>
+
+    <!-- 3. ВІДКРИТТЯ (ref_opening.jpg) -->
+    <section class="screen page-opening" data-page="opening" aria-labelledby="opening-title" data-opening-at="2026-11-29T19:00:00+02:00" hidden>
+      <div class="luxury-frame centered-stage opening-stage">
+        <div class="stage-crest-block">
+          <img class="round-crest" src="assets/kaeru-crest.png" width="248" height="214" alt="">
+          <p class="crest-title">KAERU</p>
+          <p class="crest-subtitle">ЯПОНСЬКИЙ ГАСТРОБАР У КИЄВІ</p>
+        </div>
+
+        <h1 id="opening-title" class="opening-heading" tabindex="-1">ВІДКРИТТЯ ВЖЕ СКОРО</h1>
+
+        <div class="countdown" role="timer" aria-label="Відлік до офіційного відкриття KAERU">
+          <div class="countdown-unit">
+            <span class="countdown-num" data-time="days">12</span>
+            <small>ДНІ</small>
+          </div>
+          <span class="countdown-sep" aria-hidden="true">:</span>
+          <div class="countdown-unit">
+            <span class="countdown-num" data-time="hours">25</span>
+            <small>ГОДИН</small>
+          </div>
+          <span class="countdown-sep" aria-hidden="true">:</span>
+          <div class="countdown-unit">
+            <span class="countdown-num" data-time="minutes">53</span>
+            <small>ХВИЛИН</small>
+          </div>
+          <span class="countdown-sep" aria-hidden="true">:</span>
+          <div class="countdown-unit">
+            <span class="countdown-num" data-time="seconds">17</span>
+            <small>СЕКУНД</small>
+          </div>
+        </div>
+
+        <a class="outline-button opening-cta" href="#registration">
+          <span>ОТРИМАТИ ЗАПРОШЕННЯ</span>
+          <span class="button-arrow" aria-hidden="true">⟶</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 4. РЕЄСТРАЦІЯ (01 · KAERU_registration_desktop_mobile.png) -->
+    <section class="screen page-registration" data-page="registration" aria-labelledby="registration-title" hidden>
+      <div class="luxury-frame rsvp-frame">
+        <div class="rsvp-top-bar">
+          <div class="stage-crest-compact">
+            <img class="round-crest-sm" src="assets/kaeru-crest.png" width="248" height="214" alt="">
+            <span>KAERU</span>
+          </div>
+        </div>
+
+        <div class="registration-grid">
+          <div class="registration-intro">
+            <span class="gold-rule" aria-hidden="true"></span>
+            <p class="eyebrow">ОСОБЛИВИЙ ВЕЧІР</p>
+            <h2 class="serif-display">ВАШЕ МІСЦЕ<br>У СВІТІ <em>KAERU</em></h2>
+            <p class="lead">Підтвердьте свою присутність,<br>щоб стати частиною нашої історії.</p>
+            <p class="intro-note"><span aria-hidden="true">✦</span> СТВОРЕНО ДЛЯ ОСОБЛИВИХ МОМЕНТІВ</p>
+          </div>
+
+          <div class="registration-panel">
+            <p class="eyebrow">ВАШЕ ЗАПРОШЕННЯ ПОЧИНАЄТЬСЯ ТУТ</p>
+            <h1 id="registration-title" class="serif-display" tabindex="-1">РЕЄСТРАЦІЯ</h1>
+            <div class="ornament-left" aria-hidden="true"><span>✧</span></div>
+
+            <form id="rsvp-form" method="post" novalidate>
+              <label class="luxury-field">
+                <span class="field-title">ВАШЕ ІМ’Я</span>
+                <input name="name" type="text" autocomplete="name" placeholder="Як до вас звертатися?" required maxlength="70">
+              </label>
+
+              <label class="luxury-field">
+                <span class="field-title">НОМЕР ТЕЛЕФОНУ</span>
+                <input name="phone" type="tel" autocomplete="tel" placeholder="+380 (__) ___ __ __" required maxlength="24" aria-describedby="rsvp-note">
+              </label>
+
+              <fieldset class="attendance">
+                <legend>ЧИ БУДЕТЕ ВИ ПРИСУТНІ?</legend>
+                <div class="attendance-options">
+                  <label>
+                    <input type="radio" name="attending" value="yes" checked>
+                    <span><b aria-hidden="true">✓</b> ТАК</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="attending" value="no">
+                    <span>НІ</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <button class="gold-button framed-cta full-width" type="submit">
+                <span>ПРОДОВЖИТИ</span>
+                <svg class="cta-long-arrow" width="32" height="14" aria-hidden="true"><use href="#icon-arrow-long"/></svg>
+              </button>
+              <p class="form-note" id="rsvp-note">Лише три кроки — і ви серед запрошених.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ПІДТВЕРДЖЕННЯ (02 · KAERU_confirmation_desktop_mobile.png) -->
+    <section class="screen page-confirmation" data-page="confirmation" aria-labelledby="confirmation-title" hidden>
+      <div class="luxury-frame centered-stage rsvp-stage">
+        <div class="stage-crest-compact">
+          <img class="round-crest-sm" src="assets/kaeru-crest.png" width="248" height="214" alt="">
+          <span>KAERU</span>
+        </div>
+
+        <p class="eyebrow">ПІДТВЕРДЖЕННЯ ПРИСУТНОСТІ</p>
+        <img class="large-crest" src="assets/kaeru-crest.png" width="248" height="214" alt="">
+        <div class="ornament-divider" aria-hidden="true"><span>✦</span></div>
+
+        <h1 id="confirmation-title" class="serif-display" tabindex="-1">ВИ У СПИСКУ<br>ЗАПРОШЕНИХ</h1>
+        <p class="lead">Господар додав вас до списку запрошених.<br><strong>Але це ще не все...</strong></p>
+
+        <a class="gold-button framed-cta stage-cta" id="confirmation-next" href="#koi">
+          <span>ПРОДОВЖИТИ</span>
+          <svg class="cta-long-arrow" width="32" height="14" aria-hidden="true"><use href="#icon-arrow-long"/></svg>
+        </a>
+        <p class="eyebrow end-note">НА ВАС ЧЕКАЄ МАЛЕНЬКИЙ ЗНАК УВАГИ ВІД KAERU</p>
+      </div>
+    </section>
+
+    <!-- 6. РИБКА УДАЧІ (03 · KAERU_game_desktop_mobile.png) -->
+    <section class="screen page-koi" data-page="koi" aria-labelledby="game-title" hidden>
+      <div class="luxury-frame centered-stage rsvp-stage">
+        <div class="stage-crest-compact">
+          <img class="round-crest-sm" src="assets/kaeru-crest.png" width="248" height="214" alt="">
+          <span>KAERU</span>
+        </div>
+
+        <p class="eyebrow">КОЖНА ЗУСТРІЧ — ЦЕ ТРОХИ МАГІЇ</p>
+        <h1 id="game-title" class="serif-display" tabindex="-1">СПІЙМАЙТЕ СВОЮ<br><em>РИБКУ УДАЧІ</em></h1>
+        <p class="lead">Оберіть одного з трьох коропів кої<br>та відкрийте подарунок від KAERU</p>
+
+        <div class="koi-pond" role="group" aria-label="Оберіть коропа кої">
+          <button class="koi-choice" type="button" data-fish="1" aria-label="Перший короп кої — Золотий ковток">
+            <span class="koi-ripple">
+              <img src="assets/koi-1-clean.png" width="373" height="304" alt="">
+            </span>
+            <span class="koi-numeral" aria-hidden="true" lang="ja">壱</span>
+          </button>
+
+          <button class="koi-choice" type="button" data-fish="2" aria-label="Другий короп кої — Дегустаційний сет сашимі">
+            <span class="koi-ripple">
+              <img src="assets/koi-2-clean.png" width="374" height="304" alt="">
+            </span>
+            <span class="koi-numeral" aria-hidden="true" lang="ja">弐</span>
+          </button>
+
+          <button class="koi-choice" type="button" data-fish="3" aria-label="Третій короп кої — Десерт Мочі Сакура">
+            <span class="koi-ripple">
+              <img src="assets/koi-3-clean.png" width="374" height="304" alt="">
+            </span>
+            <span class="koi-numeral" aria-hidden="true" lang="ja">参</span>
+          </button>
+        </div>
+
+        <p class="eyebrow end-note"><span aria-hidden="true">✧</span> ОДИН ГІСТЬ · ОДИН ВИБІР · ОДИН ПОДАРУНОК <span aria-hidden="true">✧</span></p>
+      </div>
+    </section>
+
+    <!-- 7. ЗАПРОШЕННЯ (04 · KAERU_invitation_desktop_mobile.png) -->
+    <section class="screen page-invitation" data-page="invitation" aria-labelledby="invitation-title" hidden>
+      <div class="luxury-frame centered-stage rsvp-stage invitation-stage">
+        <div class="stage-crest-compact">
+          <img class="round-crest-sm" src="assets/kaeru-crest.png" width="248" height="214" alt="">
+          <span>KAERU</span>
+        </div>
+
+        <p class="eyebrow">З ЛЮБОВ’Ю ВІД KAERU</p>
+        <h1 id="invitation-title" class="serif-display" tabindex="-1">ВАШЕ ПЕРСОНАЛЬНЕ<br>ЗАПРОШЕННЯ</h1>
+        <p class="lead">Ваш вечір у KAERU починається тут.</p>
+
+        <article class="ticket" aria-label="Персональне запрошення KAERU">
+          <span class="ticket-star ticket-star-tl" aria-hidden="true">✦</span>
+          <span class="ticket-star ticket-star-br" aria-hidden="true">✦</span>
+
+          <div class="ticket-content">
+            <p class="ticket-brand">
+              <strong>K A E R U</strong>
+              <span>R E S T A U R A N T</span>
+            </p>
+            <p class="ticket-label">ШАНОВНИЙ ГОСТЮ</p>
+            <p class="ticket-name" id="guest-name">Ім’я гостя</p>
+
+            <dl class="ticket-details">
+              <div>
+                <dt>ДАТА ВІДКРИТТЯ</dt>
+                <dd id="ticket-date">ДД.ММ.РРРР</dd>
+              </div>
+              <div>
+                <dt>ЧАС</dt>
+                <dd id="ticket-time">ГГ:ХХ</dd>
+              </div>
+            </dl>
+
+            <p class="ticket-gift-badge">ВАШ ПОДАРУНОК</p>
+            <p class="ticket-gift-name" id="ticket-gift-title"><span aria-hidden="true">✧</span> Золотий ковток</p>
+            <p class="ticket-gift-description" id="ticket-gift-desc">Авторський welcome-коктейль<br>або безалкогольна альтернатива</p>
+          </div>
+
+          <figure class="ticket-qr">
+            <div class="qr-box">
+              <img id="invitation-qr" src="assets/invitation-qr.png" width="264" height="264" alt="QR-код запрошення">
+            </div>
+            <figcaption>
+              <strong>QR-КОД ДЛЯ ВХОДУ</strong>
+              <small>ДЕМОНСТРАЦІЙНИЙ ЗРАЗОК</small>
+            </figcaption>
+          </figure>
+        </article>
+
+        <div class="ticket-actions">
+          <button class="gold-button framed-cta save-button" id="save-invitation" type="button">
+            <span class="save-icon" aria-hidden="true">↓</span>
+            <span>ЗБЕРЕГТИ ЗАПРОШЕННЯ</span>
+          </button>
+          <p class="form-note" id="download-status" role="status"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. ПОДЯКА (05 · KAERU_decline_desktop_mobile.png) -->
+    <section class="screen page-thanks" data-page="thanks" aria-labelledby="thanks-title" hidden>
+      <div class="luxury-frame centered-stage rsvp-stage thanks-stage">
+        <div class="stage-crest-compact">
+          <img class="round-crest-sm" src="assets/kaeru-crest.png" width="248" height="214" alt="">
+          <span>KAERU</span>
+        </div>
+
+        <svg class="torii-art" viewBox="0 0 280 220" aria-hidden="true">
+          <use href="#torii-sunset"/>
+        </svg>
+
+        <p class="eyebrow">KAERU · JAPANESE GASTROBAR</p>
+        <div class="ornament-divider" aria-hidden="true"><span>✧</span></div>
+        <h1 id="thanks-title" class="serif-display" tabindex="-1">ДЯКУЄМО<br>ВАМ</h1>
+        <p class="lead">Шкода, що цього разу ви не зможете<br>бути з нами.</p>
+        <p class="thanks-farewell">Двері KAERU завжди відкриті для вас.<br>До нових зустрічей!</p>
+
+        <a class="gold-button framed-cta stage-cta" href="#about">
+          <span>ПОВЕРНУТИСЯ НА ГОЛОВНУ</span>
+          <svg class="cta-long-arrow" width="32" height="14" aria-hidden="true"><use href="#icon-arrow-long"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- 9. БРОНЮВАННЯ (KAERU_booking_desktop_mobile.png + ref_booking.jpg) -->
+    <section class="screen page-booking" data-page="booking" aria-labelledby="booking-title" hidden>
+      <div class="luxury-frame booking-frame">
+        <svg class="booking-sakura" viewBox="0 0 260 150" aria-hidden="true"><use href="#sakura-branch"/></svg>
+
+        <div class="booking-split">
+          <div class="booking-visual">
+            <img src="assets/restaurant.jpg" width="1460" height="973" alt="Вечірній столик у ресторані KAERU">
+            <div class="booking-scroll-calligraphy" aria-hidden="true" lang="ja">帰<br>る</div>
+            <div class="booking-visual-caption">
+              <img class="round-crest-sm" src="assets/kaeru-crest.png" width="248" height="214" alt="">
+              <p>ЗАБРОНЮЙТЕ<br>СВІЙ СТІЛ<br>У KAERU</p>
+            </div>
+          </div>
+
+          <div class="booking-panel">
+            <div class="booking-header">
+              <h1 id="booking-title" class="serif-display" tabindex="-1">БРОНЮВАННЯ</h1>
+              <p class="lead">Забронюйте свій стіл у KAERU та пориньте<br>в атмосферу сучасної японської гастрономії.</p>
+            </div>
+
+            <form id="booking-form" method="post" novalidate>
+              <div class="booking-row-3">
+                <label class="icon-field">
+                  <svg class="field-icon" width="20" height="20" aria-hidden="true"><use href="#icon-calendar"/></svg>
+                  <div class="field-body">
+                    <span class="field-mini-label">Дата</span>
+                    <input type="date" name="date" required>
+                  </div>
+                </label>
+
+                <label class="icon-field">
+                  <svg class="field-icon" width="20" height="20" aria-hidden="true"><use href="#icon-clock"/></svg>
+                  <div class="field-body">
+                    <span class="field-mini-label">Час</span>
+                    <select name="time" required>
+                      <option value="">Час</option>
+                    </select>
+                  </div>
+                </label>
+
+                <label class="icon-field">
+                  <svg class="field-icon" width="20" height="20" aria-hidden="true"><use href="#icon-guests"/></svg>
+                  <div class="field-body">
+                    <span class="field-mini-label">Кількість гостей</span>
+                    <select name="guests" required>
+                      <option value="">Кількість гостей</option>
+                    </select>
+                  </div>
+                </label>
+              </div>
+
+              <div class="booking-row-2">
+                <label class="icon-field">
+                  <svg class="field-icon" width="20" height="20" aria-hidden="true"><use href="#icon-user"/></svg>
+                  <div class="field-body">
+                    <span class="field-mini-label">Ваше ім’я</span>
+                    <input name="name" type="text" autocomplete="name" placeholder="Ваше ім’я" required maxlength="70">
+                  </div>
+                </label>
+
+                <label class="icon-field">
+                  <svg class="field-icon" width="20" height="20" aria-hidden="true"><use href="#icon-phone"/></svg>
+                  <div class="field-body">
+                    <span class="field-mini-label">Номер телефону</span>
+                    <input name="phone" type="tel" autocomplete="tel" placeholder="+380 (__) ___ __ __" required maxlength="24">
+                  </div>
+                </label>
+              </div>
+
+              <div class="floor-selector">
+                <div class="floor-selector-head">
+                  <span>Зона та столик у залі</span>
+                  <small id="floor-status" role="status">Оберіть вільний столик або залиште автовибір</small>
+                </div>
+                <div class="floor-tables" id="floor-tables" role="group" aria-label="Столики у залі"></div>
+              </div>
+
+              <div class="booking-submit-wrap">
+                <button class="gold-button booking-pill-cta booking-submit" type="submit">
+                  <span>ЗАБРОНЮВАТИ СТІЛ</span>
+                  <svg class="cta-short-arrow" width="20" height="20" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
+                </button>
+              </div>
+            </form>
+
+            <div class="booking-result" id="booking-result" role="status" hidden></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. КОНТАКТИ -->
+    <section class="screen page-contacts" data-page="contacts" aria-labelledby="contacts-title" hidden>
+      <div class="luxury-frame contacts-frame">
+        <div class="contacts-grid">
+          <div class="contacts-copy">
+            <img class="round-crest-sm" src="assets/kaeru-crest.png" width="248" height="214" alt="">
+            <p class="eyebrow">ЯПОНСЬКИЙ ГАСТРОБАР У КИЄВІ</p>
+            <h1 id="contacts-title" class="serif-display" tabindex="-1">КОНТАКТИ</h1>
+            <p class="lead">Чекаємо на вас у самому серці історичного Печерська біля Арсенальної площі.</p>
+
+            <dl class="contacts-list">
+              <div>
+                <dt>ЛОКАЦІЯ</dt>
+                <dd>Київ, м. Арсенальна · вул. Князів Острозьких, 2</dd>
+              </div>
+              <div>
+                <dt>ГОДИНИ РОБОТИ</dt>
+                <dd>Щодня з 12:00 до 23:00 (Пт–Сб до 00:00)</dd>
+              </div>
+              <div>
+                <dt>РЕЗЕРВ СТОЛІВ</dt>
+                <dd><a href="tel:+380442908899">+380 (44) 290 88 99</a> · <a href="mailto:reserve@kaeru.kyiv.ua">reserve@kaeru.kyiv.ua</a></dd>
+              </div>
+            </dl>
+
+            <div class="about-cta-row">
+              <a class="gold-button" href="#booking">Забронювати стіл <span class="button-arrow" aria-hidden="true">⟶</span></a>
+              <a class="outline-button" href="#opening">Відкриття гастробару</a>
+            </div>
+          </div>
+
+          <div class="contacts-visual-card">
+            <img src="assets/restaurant.jpg" width="1460" height="973" loading="lazy" alt="Вечірня зала KAERU">
+            <div class="contacts-map-overlay">
+              <div class="pin-badge">
+                <svg width="22" height="22" aria-hidden="true"><use href="#icon-pin"/></svg>
+                <div>
+                  <strong>KAERU KYIV</strong>
+                  <span>Арсенальна площа · 2 хв пішки від метро</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">ВАШЕ ЗАМОВЛЕННЯ</p>
+        <h2 id="cart-title" class="serif-display">КОШИК</h2>
+      </div>
+      <form method="dialog">
+        <button class="cart-close" type="submit" aria-label="Закрити кошик">×</button>
+      </form>
+    </div>
+
+    <p id="cart-status" class="cart-empty-msg" role="status"></p>
+    <ul id="cart-items" class="cart-items" aria-label="Обрані страви"></ul>
+
+    <form class="checkout" id="checkout-form" method="post" hidden novalidate>
+      <div class="cart-total">
+        <span>Разом до сплати</span>
+        <strong id="cart-total">0 ₴</strong>
+      </div>
+      <label class="luxury-field">
+        <span class="field-title">ВАШЕ ІМ’Я</span>
+        <input name="name" autocomplete="name" placeholder="Як до вас звертатися?" maxlength="70" required>
+      </label>
+      <label class="luxury-field">
+        <span class="field-title">НОМЕР ТЕЛЕФОНУ</span>
+        <input name="phone" type="tel" autocomplete="tel" placeholder="+380 (__) ___ __ __" maxlength="24" required>
+      </label>
+      <button class="gold-button full-width" type="submit">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+      <p class="form-note">Демонстраційне замовлення без списання коштів.</p>
+    </form>
+
+    <div class="cart-footer">
+      <a href="#menu" class="line-link" id="cart-to-menu">Перейти до меню <span aria-hidden="true">↗</span></a>
+    </div>
+  </dialog>
+
+  <noscript>
+    <p class="noscript">Увімкніть JavaScript, щоб переглянути інтерактивний макет KAERU.</p>
+  </noscript>
+</body>
+</html>
